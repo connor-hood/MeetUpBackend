@@ -7,36 +7,36 @@ class Company(models.Model):
     name = models.CharField(max_length=255)
     url = models.TextField()
 
-    def __str__(self):
-        return self.name
+    # def __str__(self):
+    #     return self.name
 
 
 class ProductSize(models.Model):
     name = models.CharField(max_length=255)
 
-    def __str__(self):
-        return self.name
+    # def __str__(self):
+    #     return self.name
 
 
 class Category(models.Model):
     name = models.CharField(max_length=255)
 
-    def __str__(self):
-        return self.name
+    # def __str__(self):
+    #     return self.name
 
 
 class Product(models.Model):
     name = models.CharField(max_length=255)
     content = models.TextField()
-    category = models.ManyToManyField(Category, related_name='products')
+    category = models.ManyToManyField(Category, related_query_name='products')
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
-    class Meta:
-        ordering = ['-created']
+    # class Meta:
+    #     ordering = ['-created']
 
-    def __str__(self):
-        return self.name
+    # def __str__(self):
+    #     return self.name
 
 
 class ProductSite(models.Model):
@@ -50,8 +50,8 @@ class ProductSite(models.Model):
     created = models.DateField(auto_now_add=True)
     updated = models.DateField(auto_now=True)
 
-    def __str__(self):
-        return self.name
+    # def __str__(self):
+    #     return self.name
 
 
 class Comment(models.Model):
@@ -63,5 +63,5 @@ class Comment(models.Model):
     created = models.DateField(auto_now_add=True)
     updated = models.DateField(auto_now=True)
 
-    def __str__(self):
-        return self.title
+    # def __str__(self):
+    #     return self.title
