@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/MeetUpBackend.iml" filepath="$PROJECT_DIR$/.idea/MeetUpBackend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JWTBackend.iml" filepath="$PROJECT_DIR$/.idea/JWTBackend.iml" />
     </modules>
   </component>
 </project>
